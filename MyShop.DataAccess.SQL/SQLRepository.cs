@@ -49,7 +49,6 @@ namespace MyShop.DataAccess.SQL
         public void Insert(T t)
         {
             dbSet.Add(t);
-            Commit();
         }
 
         public void Update(T t)

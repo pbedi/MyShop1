@@ -41,6 +41,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Insert(productCategory);
+                context.Commit();
                 return RedirectToAction("Index");
             }
         }
